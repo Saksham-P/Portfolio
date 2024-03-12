@@ -23,6 +23,7 @@
     max-width: 50%;
     margin-top: auto;
     margin-bottom: auto;
+    transition: var(--default-transition);
 }
 
 #intro_text p {

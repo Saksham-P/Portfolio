@@ -47,7 +47,7 @@ function LandingPage() {
           </div>
         </div>
         <div id="intro_section3">
-          <div id="intro_text" >
+          <div id="intro_text" className='hidden'>
             <p>Hi! I am</p>
             <h1>Saksham Puri</h1>
             <div id='intro_links'>
