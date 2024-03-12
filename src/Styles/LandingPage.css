@@ -1,0 +1,140 @@
+#intro_section {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 90dvh;
+    flex-direction: row;
+    justify-content: space-around;
+
+    gap: 5vw;
+}
+
+#intro_section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 90vh;
+    gap: 5vw;
+    visibility: hidden;
+}
+
+#intro_text {
+    display: block;
+    max-width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#intro_text p {
+    font-size: 1.5rem;
+    height: 1.5rem;
+    color: var(--primary-text);
+}
+
+#intro_text h1 {
+    font-size: 2.5rem;
+    color: var(--primary-text);
+    border-bottom: 5px solid var(--primary-text);
+}
+
+#intro_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+#intro_links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--link-text);
+}
+
+#intro_img_container {
+    display: flex;
+    align-items: center;
+    width: 37vw;
+    max-width: 37vw;
+}
+
+#intro_img {
+    width: 37vw;
+}
+
+#about_section {
+    position: relative;
+    background-color: var(--primary-bg);
+    z-index: 1;
+    height: 100dvh;
+    display: flex;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+#about_left_section {
+    background-color: var(--accent-bg);
+    width: 52%;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    height: 100dvh;
+    z-index: 2;
+}
+
+#about_left_section h1{
+    position: fixed;
+    top: 0vh;
+    left: 20vw;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--primary-text);
+}
+
+#about_left_text {
+    position: fixed;
+    top: 40vh;
+    width: 40%;
+    left: 3vw;
+    padding-bottom: 32vh;
+}
+
+#about_left_text p{
+    font-size: 1.5rem;
+    color: var(--primary-text);
+}
+
+#intro_section3 {
+    position: fixed;
+    top: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 90vh;
+    gap: 5vw;
+}
+
+#intro_img3 {
+    width: 26.1vw;
+    max-width: 26.1vw;
+    height: 26.1vw;
+    margin-left: 3vw;
+    margin-bottom: 8.3vh;
+}
+
+
+
+
+.hidden {
+    visibility: hidden;
+}
+
+#about_left_text2 {
+    width: 76%;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+}
+
+#about_left_text2 p{
+    font-size: 1.5rem;
+    color: var(--primary-text);
+}
+
