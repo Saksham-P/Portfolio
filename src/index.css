@@ -25,7 +25,7 @@ body {
 :root[data-theme="light"] {
     --logo-fill: black;
     --page-bg: white;
-    --theme-url: url('./Assets/themeButtonLight.png');
+    --theme-url: url('./Assets/themeButtonLight.svg');
     --code-url: url('./Assets/codeImageLight.png');
 
     --primary-text: black;
@@ -38,7 +38,7 @@ body {
 :root[data-theme="dark"] {
     --logo-fill: white;
     --page-bg: black;
-    --theme-url: url('./Assets/themeButtonDark.png');
+    --theme-url: url('./Assets/themeButtonDark.svg');
     --code-url: url('./Assets/codeImageLight.png');
 
     --primary-text: white;
