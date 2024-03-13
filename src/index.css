@@ -31,7 +31,7 @@ body {
     --primary-text: black;
     --link-text: #4543C7;
 
-    --primary-bg: #4543C7;
+    --primary-bg: #6462D0;
     --accent-bg: #B5B5E8;
 }
 
@@ -49,10 +49,20 @@ body {
 }
 
 :root {
+    --placeholder-text: #B1B0E8;
+    --button-bg: #5F5DD9;
     --default-transition: color .3s ease-in-out, background-color .3s ease-in-out,
         border-color .3s ease-in-out, fill .3s ease-in-out, transform .3s ease-in-out;
 }
 
 .hidden {
     visibility: hidden;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
 }
