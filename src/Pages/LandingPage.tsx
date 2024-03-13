@@ -5,19 +5,19 @@ import codeImage from '../Assets/codeImageLight.png'
 function LandingPage() {
   return (
     <>
-      <div id='intro_container'>
-        <div id="intro_section">
-          <div id="intro_text">
+      <div className='intro_container'>
+        <div className="intro_section">
+          <div className="intro_text">
             <p>Hi! I am</p>
             <h1>Saksham Puri</h1>
-            <div id='intro_links'>
+            <div className='intro_links'>
               <a href='https://www.linkedin.com/in/sakshamp7'>LinkedIn</a>
               <a href='https://github.com/saksham-P'>GitHub</a>
             </div>
           </div>
-          <div id='intro_img_container'>
-            <div id='intro_img_background'>
-              <img id='intro_img' src={portrait} alt='portrait'></img>
+          <div className='intro_img_container'>
+            <div className='intro_img_background'>
+              <img className='intro_img' src={portrait} alt='portrait'></img>
             </div>
           </div>
         </div>
@@ -34,18 +34,18 @@ function LandingPage() {
             </div>
           </div>
         </div>
-        <div id="intro_section" style={{top: '10vh'}}>
-          <div id="intro_text" className='hidden'>
+        <div className="intro_section" style={{top: '10vh'}}>
+          <div className="intro_text hidden">
             <p>Hi! I am</p>
             <h1>Saksham Puri</h1>
-            <div id='intro_links'>
+            <div className='intro_links'>
               <a href='https://www.linkedin.com/in/sakshamp7'>LinkedIn</a>
               <a href='https://github.com/saksham-P'>GitHub</a>
             </div>
           </div>
-          <div id='intro_img_container'>
-            <div id='intro_img_background'>
-              <img id='intro_img' src={codeImage} alt='portrait'></img>
+          <div className='intro_img_container'>
+            <div className='intro_img_background'>
+              <img className='intro_img' src={codeImage} alt='portrait'></img>
             </div>
           </div>
         </div>
