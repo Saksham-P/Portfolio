@@ -1,0 +1,9 @@
+#project_item_background {
+    display: flex;
+    flex-direction: row;
+
+    background-color: var(--accent-bg);
+
+    width: 100%;
+    height: auto;
+}

@@ -25,12 +25,10 @@
 .intro_text p {
     font-size: 1.5rem;
     height: 1.5rem;
-    color: var(--primary-text);
 }
 
 .intro_text h1 {
     font-size: 2.5rem;
-    color: var(--primary-text);
     border-bottom: 5px solid var(--primary-text);
 }
 
@@ -104,7 +102,6 @@
     left: 18vw;
     font-size: 2.5rem;
     text-align: center;
-    color: var(--primary-text);
 }
 
 #about_left_text {
@@ -116,7 +113,6 @@
 
 #about_left_text p {
     font-size: 1.5rem;
-    color: var(--primary-text);
 }
 
 #code_img_section {

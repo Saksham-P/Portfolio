@@ -1,5 +1,5 @@
+import { Link, useNavigate } from 'react-router-dom';
 import '../Styles/Header.css'
-
 
 const switchTheme = () => {
   const rootElem = document.documentElement;
@@ -9,10 +9,11 @@ const switchTheme = () => {
 }
 
 function Header() {
+  const navigate = useNavigate();
   return (
     <>
       <div id="header_background">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="14 -22 158 158">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="14 -22 158 158" onClick={()=>navigate("/")} cursor={"pointer"}>
           <path d="M 40 2 c -10.2 2.1 -20 10 -23.4 18.8 c -2.6 7.1 -2.3 17.6 0.8 23.7 c 4.9 9.4 11.8 13.3 31.7 17.9
            c 16.2 3.6 22.4 6.7 25 12 c 1.8 3.9 2.1 12.7 0.5 15.9 c -6.9 13.5 -29.7 15.5 -53.2 4.8 l -6.7 -3 v 7.5 c 
            0 8.6 -0.7 8 13.5 11.5 c 25.7 6.3 49.4 1.7 58.2 -11.3 c 6.3 -9.5 6.6 -25 0.5 -34.7 c -5.1 -8.3 -15.7 -13.4 
@@ -23,8 +24,8 @@ function Header() {
            -2.9 l -52 -0.2 c -28.6 -0.1 -49.2 0.2 -50.3 0.4 z" fill='var(--logo-fill)'/>
         </svg>
         <div id='header_link_section'>
-          <a href="/#header" className="header-links">Projects</a>
-          <a href="/#header" className="header-links">My Journey</a>
+          <Link to="/projects" className="header-links">Projects</Link>
+          <Link to="/journey" className="header-links">My Journey</Link>
           <a href="/#header" className="header-links">Contact</a>
           <button id='header_theme_button' onClick={switchTheme}></button>
         </div>
