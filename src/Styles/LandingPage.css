@@ -45,6 +45,10 @@
     color: var(--link-text);
 }
 
+.intro_links a:hover {
+    text-decoration: underline;
+}
+
 .intro_img_container {
     display: flex;
     align-items: center;

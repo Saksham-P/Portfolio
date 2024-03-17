@@ -1,5 +1,4 @@
 import "../Styles/ProjectItem.css"
-import portfolio from "../Assets/portfolio.png"
 
 interface ProjectData {
   data: {
@@ -7,6 +6,7 @@ interface ProjectData {
     imageLocation: string;
     name: string;
     description: string;
+    languages: string[];
     collaborators: {
       name: string;
       link: string;
@@ -18,24 +18,35 @@ interface ProjectData {
   }
 }
 
+const images = require.context('../Assets/ProjectImages', true);
 
 function ProjectItem(data: ProjectData) {
   return (
-    <div id="project_item_background">
-      <div>
-        <img src={portfolio} alt="Project"></img>
+    <>
+      <div className="project_item_image_container">
+        <img src={images(data.data.imageLocation)} alt="Project"></img>
       </div>
-      <div>
-        <div>
-        <h1>{data.data.name}</h1>
-        <p></p>
+      <div className="project_item_top_container">
+        <div className="project_item_top">
+          <h1>{data.data.name}</h1>
+          <p>{data.data.description}</p>
         </div>
-        <div>
-          <p>Collaborators:</p>
-          <p>Links:</p>
+        <div className="project_item_bottom_container">
+          {data.data.languages.length > 0 ? <p>Languages: {data.data.languages.map((lang, i) => {
+            if (i === data.data.languages.length - 1) return lang
+            else return `${lang}, `
+          })}</p> : null}
+          {data.data.collaborators.length > 0 ? <p>Collaborators: {data.data.collaborators.map((person, i) => {
+            if (i === data.data.collaborators.length - 1) return <a key={i} href={person.link}>{person.name}</a>
+            else return <a key={i} href={person.link}>{person.name}, </a>
+          })}</p> : null}
+          <p>Links: {data.data.links.map((link, i) => {
+            if (i === data.data.links.length - 1) return <a key={i} href={link.link}>{link.platform}</a>
+            else return <a key={i} href={link.link}>{link.platform}, </a>
+          })}</p>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

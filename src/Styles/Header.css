@@ -27,6 +27,15 @@
     margin-left: 4vw;
 
     transition: var(--default-transition);
+    background: none;
+    border: none;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.header-links:hover {
+    text-decoration: underline;
 }
 
 #header_theme_button {
