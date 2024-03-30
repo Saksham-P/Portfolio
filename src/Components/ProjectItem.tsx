@@ -38,11 +38,11 @@ function ProjectItem(data: ProjectData) {
           })}</p> : null}
           {data.data.collaborators.length > 0 ? <p>Collaborators: {data.data.collaborators.map((person, i) => {
             if (i === data.data.collaborators.length - 1) return <a key={i} href={person.link}>{person.name}</a>
-            else return <a key={i} href={person.link}>{person.name}, </a>
+            else return <><a key={i} href={person.link}>{person.name}</a><p style={{display: "inline"}}>, </p></>
           })}</p> : null}
           <p>Links: {data.data.links.map((link, i) => {
             if (i === data.data.links.length - 1) return <a key={i} href={link.link}>{link.platform}</a>
-            else return <a key={i} href={link.link}>{link.platform}, </a>
+            else return <><a key={i} href={link.link}>{link.platform}</a><p style={{display: "inline"}}>, </p></>
           })}</p>
         </div>
       </div>

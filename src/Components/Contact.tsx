@@ -1,4 +1,5 @@
 import '../Styles/Contact.css'
+import { Link } from 'react-router-dom';
 
 function Contact() {
   return (
@@ -18,8 +19,8 @@ function Contact() {
           </div>
           <div className='contact_links'>
             <h1>Find Me</h1>
-            <a href='https://www.linkedin.com/in/sakshamp7'>LinkedIn</a>
-            <a href='https://github.com/saksham-P'>GitHub</a>
+            <a href='https://www.linkedin.com/in/sakshamp7' target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href='https://github.com/saksham-P' target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
         <div id='contact_me_section'>

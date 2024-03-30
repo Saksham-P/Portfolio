@@ -52,10 +52,9 @@ function Projects() {
     }
   }
 
-
   return (
     <>
-      <h1 className='project_title'>Passion Projects</h1>
+      <h1 className='project_title' id='passion'>Passion Projects</h1>
       <div className='project_container'>
         <button className='projects_left_button direction_button' onClick={() => prevProject(0)}>&#11207;</button>
         <div className='project_item_container'>
@@ -67,7 +66,7 @@ function Projects() {
         </div>
         <button className='projects_right_button direction_button' onClick={() => nextProject(0)}>&#11208;</button>
       </div>
-      <h1 className='project_title'>Hackathon Projects</h1>
+      <h1 className='project_title' id='hackathon'>Hackathon Projects</h1>
       <div className='project_container'>
         <button className='projects_left_button direction_button' onClick={() => prevProject(1)}>&#11207;</button>
         <div className='project_item_container'>
@@ -79,7 +78,7 @@ function Projects() {
         </div>
         <button className='projects_right_button direction_button' onClick={() => nextProject(1)}>&#11208;</button>
       </div>
-      <h1 className='project_title'>Course Projects</h1>
+      <h1 className='project_title' id='course'>Course Projects</h1>
       <div className='project_container'>
         <button className='projects_left_button direction_button' onClick={() => prevProject(2)}>&#11207;</button>
         <div className='project_item_container'>

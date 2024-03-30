@@ -4,6 +4,7 @@ body,
 html {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 p,
@@ -16,6 +17,7 @@ h6 {
     margin: 0;
     padding: 0;
     color: var(--primary-text);
+    transition: var(--default-transition);
 }
 
 body {
@@ -35,6 +37,7 @@ body {
 
     --primary-text: black;
     --link-text: #4543C7;
+    --accent-text: #6462D0;
 
     --primary-bg: #6462D0;
     --accent-bg: #B5B5E8;
@@ -48,9 +51,11 @@ body {
 
     --primary-text: white;
     --link-text: #6462D0;
+    --accent-text: #B5B5E8;
 
     --primary-bg: #222163;
     --accent-bg: #403F9E;
+    
 }
 
 :root {
