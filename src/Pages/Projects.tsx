@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { passionProjects } from '../Data/passionProjects.js'
 import { hackathonProjects } from '../Data/hackathonProjects.js'
 import { courseProjects } from '../Data/courseProjects'
+import { useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 
 import ProjectItem from '../Components/ProjectItem'
 import Contact from '../Components/Contact'
@@ -13,6 +15,19 @@ function Projects() {
   const [passionIndex, setPassionIndex] = useState(0);
   const [hackathonIndex, setHackathonIndex] = useState(0);
   const [courseIndex, setCourseIndex] = useState(0);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      let elem = document.getElementById(location.hash.slice(1))
+      if (elem) {
+        elem.scrollIntoView({ behavior: "smooth" })
+      }
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+    }
+  }, [location,])
 
   function nextProject(projectType: number) {
     if (projectType === 0) {

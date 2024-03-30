@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../Styles/Contact.css'
 
 function Contact() {
@@ -7,14 +8,14 @@ function Contact() {
         <div id='contact_link_section'>
           <div className='contact_links'>
             <h1>Explore My Projects</h1>
-            <a href='/projects#passion'>Passion Projects</a>
-            <a href='/projects#hackathon'>Hackathon Projects</a>
-            <a href='/projects#course'>Course Projects</a>
+            <Link to='/projects#passion'>Passion Projects</Link>
+            <Link to='/projects#hackathon'>Hackathon Projects</Link>
+            <Link to='/projects#course'>Course Projects</Link>
           </div>
           <div className='contact_links'>
             <h1>My Journey</h1>
-            <a href='/journey#experience'>Experience</a>
-            <a href='/journey#education'>Education</a>
+            <Link to='/journey#experience'>Experience</Link>
+            <Link to='/journey#education'>Education</Link>
           </div>
           <div className='contact_links'>
             <h1>Find Me</h1>
