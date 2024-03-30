@@ -6,6 +6,7 @@ const switchTheme = () => {
   let dataTheme = rootElem.getAttribute('data-theme'), newTheme;
   newTheme = (dataTheme === 'light') ? 'dark' : 'light';
   rootElem.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
 }
 
 function scrollToBottom() {

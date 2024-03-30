@@ -37,12 +37,12 @@ function ProjectItem(data: ProjectData) {
             else return `${lang}, `
           })}</p> : null}
           {data.data.collaborators.length > 0 ? <p>Collaborators: {data.data.collaborators.map((person, i) => {
-            if (i === data.data.collaborators.length - 1) return <a key={i} href={person.link}>{person.name}</a>
-            else return <><a key={i} href={person.link}>{person.name}</a><p style={{display: "inline"}}>, </p></>
+            if (i === data.data.collaborators.length - 1) return <a key={i} href={person.link} target="_blank" rel="noopener noreferrer">{person.name}</a>
+            else return <><a key={i} href={person.link} target="_blank" rel="noopener noreferrer">{person.name}</a><p style={{ display: "inline" }}>, </p></>
           })}</p> : null}
           <p>Links: {data.data.links.map((link, i) => {
-            if (i === data.data.links.length - 1) return <a key={i} href={link.link}>{link.platform}</a>
-            else return <><a key={i} href={link.link}>{link.platform}</a><p style={{display: "inline"}}>, </p></>
+            if (i === data.data.links.length - 1) return <a key={i} href={link.link} target="_blank" rel="noopener noreferrer">{link.platform}</a>
+            else return <><a key={i} href={link.link} target="_blank" rel="noopener noreferrer">{link.platform}</a><p style={{ display: "inline" }}>, </p></>
           })}</p>
         </div>
       </div>

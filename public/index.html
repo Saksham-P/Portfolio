@@ -26,6 +26,16 @@
   <meta name="description" content="Saksham Puri Portfolio Website" />
 
   <title>Saksham Puri</title>
+
+  <script>
+    localTheme = localStorage.getItem('theme');
+    themeToSet = localTheme;
+
+    if (!localTheme)
+      themeToSet = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+    document.documentElement.setAttribute('data-theme', themeToSet);
+  </script>
 </head>
 
 <body>

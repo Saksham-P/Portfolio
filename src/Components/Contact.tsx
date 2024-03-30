@@ -1,5 +1,4 @@
 import '../Styles/Contact.css'
-import { Link } from 'react-router-dom';
 
 function Contact() {
   return (
@@ -31,7 +30,7 @@ function Contact() {
               <input className="input" type="email" name="email" placeholder="Email Adress" />
             </div>
             <textarea id="contact_message" className="input" name="message" placeholder="Your Message"></textarea>
-            <button id="contact_button" type="button">Send</button>
+            <button id="contact_button" type="button" disabled>Under Construction</button>
           </form>
         </div>
       </div>
