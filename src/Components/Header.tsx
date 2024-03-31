@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import '../Styles/Header.css'
+import { useEffect, useState } from 'react';
 
 const switchTheme = () => {
   const rootElem = document.documentElement;
@@ -14,7 +15,14 @@ function scrollToBottom() {
 }
 
 function Header() {
+  const [open, setOpen] = useState(false);
+  const [matches, setMatches] = useState(window.matchMedia("(max-width: 910px)").matches);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.matchMedia("(max-width: 910px)").addEventListener('change', e => setMatches(e.matches));
+  }, []);
+
   return (
     <>
       <div id="header_background">
@@ -29,9 +37,16 @@ function Header() {
            -2.9 l -52 -0.2 c -28.6 -0.1 -49.2 0.2 -50.3 0.4 z" fill='var(--logo-fill)' />
         </svg>
         <div id='header_link_section'>
-          <Link to="/projects" className="header-links">Projects</Link>
-          <Link to="/journey" className="header-links">My Journey</Link>
-          <button className="header-links" onClick={scrollToBottom}>Contact</button>
+          <div className='hamburger_menu' onClick={() => setOpen(!open)}>
+            <div style={{ transform: `${open ? 'rotate(45deg)' : 'rotate(0deg)'}` }} />
+            <div style={{ transform: `${open ? 'translateX(100%)' : 'translateX(0)'}`, opacity: `${open ? 0 : 1}` }} />
+            <div style={{ transform: `${open ? 'rotate(-45deg)' : 'rotate(0deg)'}` }} />
+          </div>
+          <div className='humburger_links' style={{transform: `${((matches && open) ||(!matches)) ? 'translateY(0)': 'translateY(-200%)'}`}}>
+            <Link to="/projects" className="header-links">Projects</Link>
+            <Link to="/journey" className="header-links">My Journey</Link>
+            <button className="header-links" onClick={scrollToBottom}>Contact</button>
+          </div>
           <button id='header_theme_button' onClick={switchTheme}></button>
         </div>
       </div>
