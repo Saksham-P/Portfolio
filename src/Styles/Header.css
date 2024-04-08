@@ -106,7 +106,7 @@
     .humburger_links {
         display: flex;
         position: absolute;
-        top: 6vw;
+        top: 10vh;
         left: 0;
         width: 100vw;
         flex-direction: column;
@@ -123,13 +123,26 @@
         font-size: 3.5vw;
         background-color: var(--page-bg);
     }
+
+    #header_theme_button {
+        width: 5vw;
+        height: 5vw;
+    }
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media only screen and (max-width: 640px) {}
+@media only screen and (max-width: 640px) {
+    #header_background {
+        margin-top: 1vh;
+        height: 5vh;
+    }
+    .humburger_links {
+        top: 6vh;
+    }
+}
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-@media only screen and (max-width: 481px) {}
+@media only screen and (max-width: 480px) {}
 
 /* smartphones, iPhone, portrait 480x320 phones */
 @media only screen and (max-width: 320px) {}

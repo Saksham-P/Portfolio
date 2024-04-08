@@ -28,7 +28,7 @@ function Contact() {
           <form>
             <div id='contact_me_input'>
               <input className="input" type="text" name="name" placeholder="Name" />
-              <input className="input" type="email" name="email" placeholder="Email Adress" />
+              <input className="input" type="email" name="email" placeholder="Email Address" />
             </div>
             <textarea id="contact_message" className="input" name="message" placeholder="Your Message"></textarea>
             <button id="contact_button" type="button" disabled>Under Construction</button>
