@@ -3,6 +3,7 @@
     margin-top: 2%;
     margin-bottom: 1%;
     transition: var(--default-transition);
+    font-size: 1.675vw;
 }
 
 .project_container {
@@ -49,7 +50,7 @@
     background: none;
     border: none;
 
-    font-size: 1.8rem;
+    font-size: 1.636vw;
     color: var(--primary-text);
 
     height: min-content;
@@ -61,4 +62,72 @@
 
 .direction_button:hover {
     opacity: 0.5;
+}
+
+/* hi-res laptops and desktops */ 
+@media only screen and (max-width: 1280px) {
+    .direction_button {
+        font-size: 1.636vw;
+    }
+
+    .project_title {
+        font-size: 1.675vw;
+    }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media only screen and (max-width: 1024px) {
+    .direction_button {
+        font-size: 1.936vw;
+    }
+
+    .project_title {
+        font-size: 1.975vw;
+    }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media only screen and (max-width: 910px)  and (orientation: portrait) {
+    .direction_button {
+        font-size: 2.6vw;
+    }
+
+    .project_title {
+        font-size: 2.6vw;
+    }
+
+    .project_item_background {
+        flex-direction: column;
+    }
+
+    .project_item_background {
+        border-radius: 30px;
+    }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media only screen and (max-width: 640px) {
+    .direction_button {
+        font-size: 2.9vw;
+    }
+
+    .project_title {
+        font-size: 2.9vw;
+    }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media only screen and (max-width: 480px) {
+    .direction_button {
+        font-size: 3.2vw;
+    }
+
+    .project_title {
+        font-size: 3.2vw;
+    }
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media only screen and (max-width: 320px) {
+    
 }
