@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7b0280e0.css",
-    "main.js": "/static/js/main.afdad08c.js",
+    "main.js": "/static/js/main.7be7116a.js",
     "static/media/CalgaryCompassProject.png": "/static/media/CalgaryCompassProject.091217ab34572b4a5a36.png",
     "static/media/bookSwapProject.png": "/static/media/bookSwapProject.fb6cb6853c9ccb0c3767.png",
     "static/media/PortfolioProject.png": "/static/media/PortfolioProject.e7ef8b3f43f336759950.png",
@@ -9,14 +9,15 @@
     "static/media/portfolio.png": "/static/media/portfolio.d77b635bb3bc293ae701.png",
     "static/media/codeImageLight.png": "/static/media/codeImageLight.50ff2070bf722421eb1c.png",
     "static/media/portraitBackground.png": "/static/media/portraitBackground.da5f80ac056688e72828.png",
+    "static/media/SSR_TSRPT.pdf": "/static/media/SSR_TSRPT.a120b0f3daab13957ac7.pdf",
     "index.html": "/index.html",
     "static/media/themeButtonDark.svg": "/static/media/themeButtonDark.230cd43f9a8cc5ff67c1.svg",
     "static/media/themeButtonLight.svg": "/static/media/themeButtonLight.2135da11434b96de7766.svg",
     "main.7b0280e0.css.map": "/static/css/main.7b0280e0.css.map",
-    "main.afdad08c.js.map": "/static/js/main.afdad08c.js.map"
+    "main.7be7116a.js.map": "/static/js/main.7be7116a.js.map"
   },
   "entrypoints": [
     "static/css/main.7b0280e0.css",
-    "static/js/main.afdad08c.js"
+    "static/js/main.7be7116a.js"
   ]
 }
