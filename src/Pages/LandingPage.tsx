@@ -77,10 +77,11 @@ function LandingPage() {
           <div id='about_left_section' className='about_left_section_fixed'>
             <h1>About Me</h1>
             <div id='about_left_text' className='fixed'>
-              <p>I am a Software Engineer and an adventure seeker. I am a 3rd year Computer Science student
-                at University of Calgary, and a Co-op AI developer Student at City of Calgary. I am interested in
-                all things tech related, and mostly passionate about Machine Learning and it's applications
-                specifically within Computer Vision.</p>
+              <p>Hey, I am a 4th Computer Science student
+                studying at University of Calgary. I have worked as a <b>AI developer</b> at City of Calgary 
+                developing Computer Vision Models & Pipelines, 
+                and I am an active member of CalgaryToSpace (A UofC Cube-SAT team) <b>developing firmware</b> solutions. 
+                I am interested in all things tech related, and I am happy to learn new technologies whenever I get the chance.</p>
             </div>
           </div>
         </div>

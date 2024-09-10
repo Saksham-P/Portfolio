@@ -1,7 +1,52 @@
+import { useRef } from 'react';
 import { Link } from 'react-router-dom'
+import emailjs from '@emailjs/browser';
 import '../Styles/Contact.css'
 
 function Contact() {
+  const form = useRef(null);
+
+  const sendEmail = (e: any) => {
+    let submit_button = document.getElementById('contact_button');
+    if (submit_button != null)
+      submit_button.textContent = 'Sending...';
+
+    if (form.current != null) {
+      e.preventDefault();
+      emailjs.sendForm('service_78pccvp', 'contact_form', form.current, {
+        publicKey: 'OywOhfbJGj3SsE9Ce',
+      }).then(() => {
+        console.log('SUCCESS!');
+        let elem = document.getElementById('contact_me_input');
+        let elem2 = document.getElementById('contact_message');
+
+        if (elem != null) {
+          let inputs = elem.getElementsByClassName("input");
+          if (inputs != null) {
+            for (let i = 0; i < inputs.length; i++) {
+              inputs[i].textContent = '';
+            }
+          }
+        }
+
+        if (elem2 != null)
+          elem2.textContent = '';
+
+        if (submit_button != null) {
+          submit_button.textContent = 'Sent!';
+          submit_button.setAttribute("disabled", "disabled");
+          submit_button.style.opacity = '0.8';
+        }
+
+      }, (error) => {
+        console.log('FAILED...', error.text);
+      },
+      );
+    } else {
+      console.log("form.current is null or undefined")
+    }
+  };
+
   return (
     <>
       <div id="contact_background">
@@ -25,13 +70,13 @@ function Contact() {
         </div>
         <div id='contact_me_section'>
           <h1>Get In Touch</h1>
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <div id='contact_me_input'>
-              <input className="input" type="text" name="name" placeholder="Name" />
-              <input className="input" type="email" name="email" placeholder="Email Address" />
+              <input className="input" type="text" name="sender_name" required placeholder="Name" />
+              <input className="input" type="email" name="sender_email" required placeholder="Email Address" />
             </div>
-            <textarea id="contact_message" className="input" name="message" placeholder="Your Message"></textarea>
-            <button id="contact_button" type="button" disabled>Under Construction</button>
+            <textarea id="contact_message" className="input" name="message" required placeholder="Your Message"></textarea>
+            <button id="contact_button" type="submit">Submit</button>
           </form>
         </div>
       </div>

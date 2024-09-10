@@ -109,7 +109,6 @@
 #contact_button {
     background-color: var(--button-bg);
     color: white;
-    text-decoration: line-through;
 
     cursor: pointer;
 
