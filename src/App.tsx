@@ -4,7 +4,7 @@ import LandingPage from "./Pages/LandingPage";
 import Header from './Components/Header';
 import Projects from './Pages/Projects';
 import Journey from './Pages/Journey';
-import Transcript from './Pages/Transcript';
+// import Transcript from './Pages/Transcript';
 
 function App() {
   return (
@@ -14,7 +14,8 @@ function App() {
         <Route path='/' element={<LandingPage />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/journey' element={<Journey />} />
-        <Route path='/transcript' element={<Transcript />} />
+        {/* <Route path='/transcript' element={<Transcript />} /> */}
+        <Route path='*' element={<LandingPage />} />
       </Routes>
     </div>
   );
