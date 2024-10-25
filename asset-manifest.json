@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.59bf0bb2.css",
-    "main.js": "/static/js/main.0feb0fe7.js",
+    "main.js": "/static/js/main.acbcaf5d.js",
     "static/media/CalgaryCompassProject.png": "/static/media/CalgaryCompassProject.091217ab34572b4a5a36.png",
     "static/media/bookSwapProject.png": "/static/media/bookSwapProject.fb6cb6853c9ccb0c3767.png",
     "static/media/PortfolioProject.png": "/static/media/PortfolioProject.e7ef8b3f43f336759950.png",
@@ -13,10 +13,10 @@
     "static/media/themeButtonDark.svg": "/static/media/themeButtonDark.230cd43f9a8cc5ff67c1.svg",
     "static/media/themeButtonLight.svg": "/static/media/themeButtonLight.2135da11434b96de7766.svg",
     "main.59bf0bb2.css.map": "/static/css/main.59bf0bb2.css.map",
-    "main.0feb0fe7.js.map": "/static/js/main.0feb0fe7.js.map"
+    "main.acbcaf5d.js.map": "/static/js/main.acbcaf5d.js.map"
   },
   "entrypoints": [
     "static/css/main.59bf0bb2.css",
-    "static/js/main.0feb0fe7.js"
+    "static/js/main.acbcaf5d.js"
   ]
 }
